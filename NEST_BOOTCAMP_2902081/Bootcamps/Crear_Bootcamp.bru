@@ -6,10 +6,26 @@ meta {
 
 post {
   url: http://localhost:3000/bootcamps
-  body: none
+  body: json
   auth: none
 }
 
 params:query {
   : 
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "phone" : 134567,
+    "name" : "FUNDAMENTOS JS",
+    "averageRating" : 7,
+    "address" : "calle 51 - 15- 25",
+     "topics" : "Web, JS",
+    "createdAt" : "2022-02-11"
+  }
+  
 }

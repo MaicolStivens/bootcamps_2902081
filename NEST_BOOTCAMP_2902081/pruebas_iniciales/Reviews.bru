@@ -1,0 +1,24 @@
+meta {
+  name: Reviews
+  type: http
+  seq: 5
+}
+
+delete {
+  url: http://localhost:3000/reviews/2
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+      "title": "gfds",
+      "comment": "FUNDAMENTOS DE PROGRAMACION ",
+      "descripcion": "fdff",
+      "weeks": 1
+    }
+}
